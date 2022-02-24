@@ -1,2 +1,4 @@
-pyo == 1.0.4
+simpleaudio
+pydub
+ffmpeg-python
 PyQt6
