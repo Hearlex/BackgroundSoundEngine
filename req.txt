@@ -1,0 +1,2 @@
+pyo
+PyQt6
