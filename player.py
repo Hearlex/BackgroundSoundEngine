@@ -93,7 +93,7 @@ def stopMusic():
     global contSongs
     global music
     contSongs = False
-    music.stop()
+    sa.stop_all()
     #sfL.stop()
     #sfR.stop()
     
