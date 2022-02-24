@@ -1,4 +1,3 @@
-import threading
 import time
 import random
 import os
@@ -253,10 +252,4 @@ def main():
     sys.exit(app.exec())
 
 if __name__ == '__main__':
-    t1 = threading.Thread(target=main)
-    t2 = threading.Thread(target=runningCheck,daemon=True)
-    
-    t1.start()
-    t2.start()
-    
-    t1.join()
+    main()
