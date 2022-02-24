@@ -253,10 +253,10 @@ def main():
     sys.exit(app.exec())
 
 if __name__ == '__main__':
-    t1 = threading.Thread(target=runningCheck,daemon=True)
-    t2 = threading.Thread(target=main)
+    t1 = threading.Thread(target=main)
+    t2 = threading.Thread(target=runningCheck,daemon=True)
     
     t1.start()
     t2.start()
     
-    t2.join()
+    t1.join()
